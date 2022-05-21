@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap')
+*
+  padding: 0
+  margin: 0
+
+body
+  font-family: "PT Sans Narrow",serif
+
+header
+  display: flex
+  align-items: center
+  height: 72px
+  background-color: black
+
+
+.wrapper
+  position: absolute
+  left: 0
+  right: 0
+  width: 100%
+  font-size: 18px
+  line-height: 24px
+  font-weight: 700
+  overflow: hidden
+.container
+  max-width: 1200px
+  margin: 0 auto
+.header_wrapper
+  display: flex
+  width: 960px
+  justify-content: space-between
+  align-items: center
+  &_item
+    position: relative
+    color: white
+    cursor: pointer
+  &_item:after
+    content: ''
+    width: 0
+    height: 3px
+    background: #826550
+    position: absolute
+    top: 45px
+    left: 0
+  &_item:hover
+    color: #826550
+  &_item:hover:after
+    width: 100%
+  &_login
+    display: inline-flex
+    cursor: pointer
+    &_text
+      color: white
+      margin-left: 19px
+      &:hover
+        color: #826550
+  &_mobile_logo
+    display: none
+.back-img
+  display: flex
+  justify-content: center
+  width: 100%
+  height: 720px
+  background: url("images/back-desktop.svg")
+.img_logo
+  display: inline-block
+  margin-top: 40px
+  height: 300px
+.statistics
+  display: flex
+  justify-content: center
+  &_wrapper
+    position: absolute
+    width: 100%
+    top: 630px
+  &_left
+    display: flex
+    flex-wrap: wrap
+    background-color: white
+    width: 320px
+    height: 322px
+    &_wrapper
+      width: 205px
+      margin-left: 34px
+      margin-top: 32px
+    &_title
+      color: black
+      font-size: 40px
+      font-weight: 700
+      line-height: 40px
+    &_subtitle
+        margin-top: 38px
+        font-size: 20px
+        font-weight: 400
+    &_comment
+        font-size: 18px
+        font-weight: 400
+        margin-top: 34px
+        color: #0000004D
+  &_right
+    display: flex
+    flex-wrap: wrap
+    width: 640px
+    height: 322px
+    color: white
+    &_item
+      width: 50%
+      &_disc
+        display: flex
+        flex-wrap: wrap
+        width: 250px
+        margin-left: 34px
+        margin-top: 25px
+      &_title
+        font-size: 72px
+        font-weight: 700
+        line-height: 72px
+.first
+  background: #424242
+.second
+  background: #5e5a5a
+.third
+  background: #353535
+.fourth
+  background: #424242
+
+.advantages
+  width: 100%
+  background-color: #353535
+  height: 550px
+  &_description
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 235px
+  &_separator
+    width: 1px
+    height: 268px
+    background-color: #FFFFFF
+    opacity: 0.1
+  &_wrapper
+    display: flex
+    padding-top: 238px
+    justify-content: center
+  &_item
+    color: #FFFFFF
+    padding: 0 45px
+    &_wrapper
+      display: flex
+      justify-content: center
+    &_img
+      display: flex
+      justify-content: center
+
+    &_title
+      font-weight: 700
+      font-size: 30px
+      line-height: 30px
+      margin: 30px 0 12px
+    &_subtitle
+      display: flex
+      text-align: center
+      font-weight: 400
+      font-size: 20px
+      line-height: 27px
+  &_angle
+    width: 100%
+    height: 66px
+    background-color: #F8F5F2
+    img
+      background: #353535
+      width: 100%
+
+.news
+  background-color: #F8F5F2
+  
+  &_wrapper
+    padding-top: 64px
+    width: 960px
+  &_top
+    display: flex
+    justify-content: space-between
+    padding-top: 5%
+    width: 960px
+    margin: 0 auto
+    align-items: center
+  &_title
+    font-size: 40px
+  &_button
+    position: relative
+    display: flex
+    width: 160px
+    height: 50px
+    background-color: #F8F5F2
+    border-radius: 1px
+    border: 1px solid #E5DDD5
+    justify-content: center
+    align-items: center
+    font-size: 18px
+    line-height: 24px
+  &_bottom
+    display: flex
+    padding: 0 4%
+    position: relative
+    width: 82%
+    margin-top: 60px
+  &_item
+    display: flex
+    margin-right: 46px
+    &_date
+      margin-right: 21px
+      background-image: url("/images/news_date_background.svg")
+      width: 50px
+      height: 60px
+      color: #E5E5E5
+      text-align: center
+      &_number
+        padding-top: 6px
+        font-size: 30px
+      &_month
+        font-size: 16px
+    &_description
+      width: 203px
+      text-align: left
+
+
+@media screen and (max-width: 950px)
+  .header_wrapper
+    justify-content: space-around
+    width: 100vw
+  .news
+    &_top
+      width: 90%
+    &_bottom
+      width: 95%
+      padding: 0 4.6%
+    &_item_description
+      width: 70%
+
+@media screen and (max-width: 880px)
+  .back-img
+    height: 487px
+  .statistics
+    flex-direction: column
+    &_wrapper
+      top: 373px
+      display: flex
+    &_left
+      width: 640px
+      height: 186px
+      &_wrapper
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+      &_title
+        width: 210px
+        height: 80px
+        margin-right: 119px
+      &_subtitle
+        width: 210px
+        height: 80px
+        margin: 0
+      &_comment
+        width: 50%
+        margin: 0
+  .advantages
+    height: 850px
+    &_wrapper
+      padding-top: 350px
+      flex-direction: column
+      width: 100%
+    &_description
+      align-items: flex-start
+      width: 445px
+    &_separator
+      width: 568px
+      height: 1px
+      margin: 40px auto
+    &_item
+      display: flex
+      height: 92px
+      padding: 0
+      &_img
+        margin-right: 34px
+      &_title
+        margin: 0
+      &_subtitle
+        text-align: left
+
+@media screen and (max-width: 768px)
+  .header_wrapper
+    &_login
+      margin: 0 2%
+      &_text
+        display: none
+  .news
+    &_item:last-child
+      display: none
+      width: 0
+@media screen and (max-width: 600px)
+  .header_wrapper
+    font-size: 15px
+
+
+@media screen and (max-width: 480px)
+  .header_wrapper
+    display: none
+    &_mobile_logo
+      display: inline-block
+    &_login
+      display: none
+  header
+    justify-content: center
+    align-items: center
