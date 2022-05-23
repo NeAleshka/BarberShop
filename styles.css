@@ -24,6 +24,7 @@ header {
   line-height: 24px;
   font-weight: 700;
   overflow: hidden;
+  background-color: #F8F5F2;
 }
 
 .container {
@@ -213,16 +214,12 @@ header {
 .advantages_angle {
   width: 100%;
   height: 66px;
-  background-color: #F8F5F2;
 }
 .advantages_angle img {
   background: #353535;
   width: 100%;
 }
 
-.news {
-  background-color: #F8F5F2;
-}
 .news_wrapper {
   padding-top: 64px;
   width: 960px;
@@ -243,7 +240,6 @@ header {
   display: flex;
   width: 160px;
   height: 50px;
-  background-color: #F8F5F2;
   border-radius: 1px;
   border: 1px solid #E5DDD5;
   justify-content: center;
@@ -280,6 +276,42 @@ header {
 .news_item_description {
   width: 203px;
   text-align: left;
+}
+
+.br {
+  margin-top: 40px;
+  border: 1px #E5DDD5 solid;
+}
+
+.about_us_bottom {
+  border: 1px #E5DDD5 solid;
+  margin: 48px auto 0;
+  display: flex;
+  max-width: 960px;
+}
+.about_us_user_img {
+  height: 160px;
+  width: 249px;
+}
+.about_us_feedback {
+  display: flex;
+  line-height: 27px;
+  width: 100%;
+  max-width: 570px;
+  align-content: center;
+}
+.about_us_feedback_user_name {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.about_us_feedback_user_description {
+  font-size: 21px;
+  font-weight: 400;
+}
+.about_us_feedback_container {
+  width: 490px;
+  margin: auto;
 }
 
 @media screen and (max-width: 950px) {

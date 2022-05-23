@@ -22,6 +22,7 @@ header
   line-height: 24px
   font-weight: 700
   overflow: hidden
+  background-color: #F8F5F2
 .container
   max-width: 1200px
   margin: 0 auto
@@ -166,14 +167,11 @@ header
   &_angle
     width: 100%
     height: 66px
-    background-color: #F8F5F2
     img
       background: #353535
       width: 100%
 
 .news
-  background-color: #F8F5F2
-
   &_wrapper
     padding-top: 64px
     width: 960px
@@ -191,7 +189,6 @@ header
     display: flex
     width: 160px
     height: 50px
-    background-color: #F8F5F2
     border-radius: 1px
     border: 1px solid #E5DDD5
     justify-content: center
@@ -223,6 +220,35 @@ header
       width: 203px
       text-align: left
 
+.br
+  margin-top: 40px
+  border: 1px #E5DDD5 solid
+
+.about_us
+  &_bottom
+    border: 1px #E5DDD5 solid
+    margin: 48px auto 0
+    display: flex
+    max-width: 960px
+  &_user_img
+    height: 160px
+    width: 249px
+  &_feedback
+    display: flex
+    line-height: 27px
+    width: 100%
+    max-width: 570px
+    align-content: center
+    &_user_name
+      font-size: 26px
+      font-weight: 700
+      margin-bottom: 20px
+    &_user_description
+      font-size: 21px
+      font-weight: 400
+    &_container
+      width: 490px
+      margin: auto
 
 @media screen and (max-width: 950px)
   .header_wrapper
