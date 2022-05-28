@@ -57,6 +57,25 @@ header
         color: #826550
   &_mobile_logo
     display: none
+
+.burger_menu
+  display: none
+  width: 0
+  &_title
+    display: inline-block
+    color: #FFFFFF
+    margin: auto
+    padding-left: 60px
+  &_burger
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    width: 70px
+    height: 50px
+    background-color: #6A4D38
+
+
+
 .back-img
   display: flex
   justify-content: center
@@ -107,8 +126,6 @@ header
     &_item
       width: 50%
       &_disc
-        display: flex
-        flex-wrap: wrap
         width: 250px
         margin-left: 34px
         margin-top: 25px
@@ -295,6 +312,16 @@ header
     width: 100%
     padding-top: 51px
 
+.mobile_comment
+    display: none
+    width: 0
+    text-align: center
+    padding: 20px 0 40px 0
+    font-weight: 400
+    font-size: 20px
+    color: rgba(255, 255, 255, 0.3)
+    background-color: #353535
+
 @media screen and (max-width: 1100px)
   .footer_container
     width: 92%
@@ -311,8 +338,6 @@ header
       padding: 0 4.6%
     &_item_description
       width: 70%
-
-
 
 
 @media screen and (max-width: 880px)
@@ -339,7 +364,7 @@ header
         height: 80px
         margin: 0
       &_comment
-        width: 50%
+        width: 100%
         margin: 0
   .advantages
     height: 850px
@@ -375,12 +400,99 @@ header
     &_item:last-child
       display: none
       width: 0
+
+  .footer
+    width: 100%
+    height: 348px
+    display: flex
+    margin: 0 auto
+    &_container
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      max-width: 678px
+    &_social_links
+      order: 2
+    &_social_links_icon_item
+      width: 213px
+      height: 101px
+
 @media screen and (max-width: 600px)
   .header_wrapper
     font-size: 15px
+  .statistics
+    &_left
+      display: flex
+      width: 100%
+      justify-content: space-evenly
+      &_title
+        width: 100%
+        height: initial
+        margin-right: 0
+      &_subtitle
+        width: initial
+        height: initial
+    &_right
+      width: 100%
+      &_item_title
+        font-size: 50px
+  .advantages_item
+    width: 95%
+
 
 
 @media screen and (max-width: 480px)
+  .mobile_comment
+    display: block
+    width: initial
+  .statistics
+    &_left
+      &_comment
+        display: none
+    &_wrapper
+      background-color: #353535
+    &_right
+      flex-direction: column
+      &_item
+        display: flex
+        width: 100%
+        height: 80px
+        &_title
+          font-size: 40px
+        &_subtitle
+          display: inline-block
+          font-size: 18px
+          width: 110px
+          text-align: right
+          font-weight: 400
+        &_disc
+          display: flex
+          width: 90%
+          align-items: center
+          justify-content: space-between
+  .advantages
+    &_item
+      &_title
+        font-size: 25px
+      &_subtitle
+        font-size: 15px
+
+  .advantages
+    height: 480px
+    &_wrapper
+      padding-top: 0
+    &_separetors
+      margin-bottom: 20px
+  .burger_menu
+    width: 100%
+    height: 50px
+    background-color: #826550
+    display: flex
+  .back-img
+    display: none
+    width: 0
+  .statistics_wrapper
+    position: initial
   .header_wrapper
     display: none
     &_mobile_logo
@@ -390,3 +502,23 @@ header
   header
     justify-content: center
     align-items: center
+
+
+@media screen and (max-width: 320px)
+  .statistics
+    width: 100%
+    &_left
+      &_title
+        text-align: center
+        width: 200px
+        font-size: 30px
+        text-transform: uppercase
+      &_subtitle
+        font-size: 20px
+        width: 240px
+      &_wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: auto
